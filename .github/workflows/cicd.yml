@@ -1,0 +1,14 @@
+name: Beginner Friendly CICD
+
+on:
+  push:
+    branches: 
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+   steps:
+    - name: Print message
+      run: echo "Hello from CI/CD"
